@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Avenir Next Cyr Bold';
+  src: url("../fonts/Avenir/AvenirNextCyr-Bold.eot");
+  src: url("../fonts/Avenir/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/Avenir/AvenirNextCyr-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  src: url("../fonts/Avenir/AvenirNextCyr-Regular.eot");
+  src: url("../fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/Avenir/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaBold';
+  src: url("../fonts/Helvetica/HelveticaBold.eot");
+  src: url("../fonts/Helvetica/HelveticaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/HelveticaBold.woff") format("woff"), url("../fonts/Helvetica/HelveticaBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Avenir Next Cyr Regular';
+  font-weight: 300;
+  color: #4B5D68;
+  font-size: 18px;
+}
+
+.container {
+  width: 1240px;
+  margin: auto;
+}
+
+.btn {
+  background: #9C69E2;
+  border-radius: 50px;
+  border: none;
+  padding: 16px 37px;
+  cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+    width: 85%;
+  }
+}
+
+.navbar {
+  padding: 50px 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-links {
+  margin-right: auto;
+  margin-left: 120px;
+}
+
+.navbar-links__link {
+  text-decoration: none;
+  font-family: 'Avenir Next Cyr Regular';
+  font-weight: 300;
+  color: #4B5D68;
+}
+
+.navbar-links__link:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navbar-btn {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-btn__text {
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 160%;
+  color: #212353;
+  font-family: 'Avenir Next Cyr Bold';
+  font-weight: 900;
+}
+/*# sourceMappingURL=style.css.map */

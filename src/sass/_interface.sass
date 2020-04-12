@@ -1,0 +1,27 @@
+*
+    box-sizing: border-box
+
+body 
+    +reg
+    color: $text-color
+    font-size: 18px
+
+.container 
+    width: 1240px
+    margin: auto
+
+.btn 
+    background: #9C69E2
+    border-radius: 50px
+    border: none
+    padding: 16px 37px
+    cursor: pointer
+
+@media (max-width: 1300px)
+    .container
+        width: 750px
+
+@media (max-width: 768px)
+    .container
+        max-width: 560px
+        width: 85%
