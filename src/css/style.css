@@ -53,6 +53,9 @@ body {
 }
 
 @media (max-width: 1300px) {
+  .container {
+    width: 750px;
+  }
   .main {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -60,22 +63,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  .main {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media (max-width: 768px) {
   .container {
     max-width: 560px;
     width: 85%;
+  }
+  .main {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -457,6 +451,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-mid {
@@ -469,6 +465,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 150px;
 }
 
@@ -482,6 +480,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 90px;
 }
 
@@ -509,6 +509,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .top-pink {
@@ -678,5 +680,75 @@ body {
   border-radius: 50%;
   height: 60px;
   width: 60px;
+}
+
+@media (max-width: 1300px) {
+  .top-buttons {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top__title {
+    font-size: 30px;
+  }
+  .top-buttons {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .top-pink {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .top-btn {
+    width: 100%;
+  }
+  .top-btn__img {
+    display: none;
+  }
+  .top-text {
+    font-size: 16px;
+    margin: auto;
+  }
+  .mid-about {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .mid-about__title {
+    margin-top: 30px;
+  }
+  .mid-about-list {
+    margin-top: 20px;
+  }
+  .mid-help {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .mid-help__title {
+    margin-top: 30px;
+  }
+  .mid-help-list {
+    margin-top: 20px;
+  }
+  .mid-social {
+    width: 100%;
+  }
+  .mid-social__title {
+    margin-top: 30px;
+  }
+  .mid-social-imgs {
+    margin-top: 20px;
+  }
+  .bottom-copyright {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .bottom-chat {
+    margin: auto;
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
