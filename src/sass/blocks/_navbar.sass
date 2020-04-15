@@ -24,4 +24,15 @@
             font-size: 16px
             line-height: 160%
             color: $title-color
-            +bold      
+            +bold     
+
+@media (max-width: 1300px)
+    .navbar-links
+        display: none
+
+@media (max-width: 768px)
+    .navbar
+        &-btn
+            &__text
+                margin-right: 14px
+                font-size: 12px

@@ -113,4 +113,17 @@ body {
   font-family: 'Avenir Next Cyr Bold';
   font-weight: 900;
 }
+
+@media (max-width: 1300px) {
+  .navbar-links {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-btn__text {
+    margin-right: 14px;
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
