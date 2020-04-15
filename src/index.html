@@ -260,11 +260,15 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+    </script>
     <script src="js/slick.min.js"></script>
     <script>
-        $('.slider').slick({
+        $(document).ready(function(){
+            $('.slider').slick({
             infinite: true,
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -272,13 +276,14 @@
             nextArrow: $('.arrow-right'),
             responsive: [
             {
-            breakpoint: 1300,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                }   
-            }
-        ]
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    }   
+                }
+            ]
+            });
         });
     </script>
 </body>
