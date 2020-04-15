@@ -7,6 +7,8 @@
     <title>Data warehouse</title>
     <!-- Links Tags -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -130,10 +132,48 @@
                 <!-- /.features-block -->
             </section>
             <!-- /.features -->
-            <div class="section testimonials">
-
-            </div>
-            <!-- /.section testimonials -->
+            <section class="testimonials">
+                <h2 class="testimonials__title">Testimonials</h4>
+                <div class="slider">
+                    <div class="slider-item">
+                        <div class="slider-item-block">
+                            <img src="img/item1.png" alt="Icon" class="slider__img">
+                            <div class="slider-info">
+                                <span class="slider__text">John Fang</span>
+                                <span class="slider__quality">wordfaang.com</span>
+                                <span class="slider__about">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item-block">
+                            <div class="slider-img">
+                                <img src="img/item2.png" alt="Icon" class="slider__img">
+                            </div>
+                            <div class="slider-info">
+                                <span class="slider__text">Jeny Doe</span>
+                                <span class="slider__quality">UX Engineer</span>
+                                <span class="slider__about">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item-block">
+                            <img src="img/item3.png" alt="Icon" class="slider__img">
+                            <div class="slider-info">
+                                <span class="slider__text">William</span>
+                                <span class="slider__quality">Web Designer</span>
+                                <span class="slider__about">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <div class="arrow-left"><img src="img/left-arrow.png" alt=""></div>
+                    <div class="arrow-right"><img src="img/right-arrow.png" alt=""></div>
+                </div>
+            </section>
+            <!-- /.testimonials -->
         </div>
         <!-- /.container -->
     </main>
@@ -220,5 +260,26 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            prevArrow: $('.arrow-left'),
+            nextArrow: $('.arrow-right'),
+            responsive: [
+            {
+            breakpoint: 1300,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                }   
+            }
+        ]
+        });
+    </script>
 </body>
 </html>
