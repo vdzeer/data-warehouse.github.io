@@ -1,0 +1,137 @@
+.footer
+    border-top: 3px solid $purple-op2
+    padding-top: 100px
+    padding-bottom: 90px
+    &-top
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-mid
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        margin-top: 150px
+    &-bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 90px
+
+.top
+    &__title
+        font-size: 40px
+        line-height: 130%
+        margin: 0
+        margin-bottom: 20px
+        color: $title-color
+        +bold
+    &__text
+        font-size: 18px
+        line-height: 160%
+        +reg
+    &-buttons
+        display: flex
+        align-items: center
+    &-pink
+        margin-right: 30px
+        background-color: $pink
+        color: #FFF
+        +bold
+
+.mid
+    &__logo
+        font-size: 20px
+        line-height: 160%
+        color: $title-color
+        margin: 0
+        margin-left: 20px
+        +title
+    &-contacts
+        display: flex
+        flex-direction: column
+        &-logo
+            display: flex
+            align-items: center
+            margin-top: -8px
+        &-adress
+            display: inline-block
+            font-size: 16px
+            line-height: 180%
+            margin-top: 65px
+            margin-bottom: 20px
+            +bold
+        &-info
+            font-size: 16px
+            line-height: 180%
+            +reg
+            &__link
+                display: block
+                text-decoration: none
+                color: $text-color
+                margin: 0
+    &-about
+        &__title
+            font-size: 16px
+            line-height: 160%
+            color: $title-color
+            margin: 0
+            +bold
+        &-list
+            margin-top: 50px
+            list-style: none
+            padding: 0
+        &__item:not(:last-child)
+            padding-bottom: 20px
+        &__link
+            text-decoration: none
+            color: $text-color
+    &-help
+        &__title
+            font-size: 16px
+            line-height: 160%
+            color: $title-color
+            margin: 0
+            +bold
+        &-list
+            margin-top: 50px
+            list-style: none
+            padding: 0
+        &__item:not(:last-child)
+            padding-bottom: 20px
+        &__link
+            text-decoration: none
+            color: $text-color
+    &-social
+        &__title
+            font-size: 16px
+            line-height: 160%
+            color: $title-color
+            margin: 0
+            +bold
+        &-imgs
+            display: flex
+            margin-top: 40px
+        &__link
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: $purple
+            border-radius: 50%
+            height: 50px
+            width: 50px
+        &__link:not(:last-child)
+            margin-right: 15px
+
+.bottom
+    &-copyright
+        font-size: 12px
+        line-height: 180%
+        +reg
+    &-img
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $purple-op
+        border-radius: 50%
+        height: 60px
+        width: 60px
