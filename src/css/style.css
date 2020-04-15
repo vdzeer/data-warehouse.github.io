@@ -47,6 +47,25 @@ body {
   cursor: pointer;
 }
 
+.main {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+@media (max-width: 1300px) {
+  .main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 @media (max-width: 1300px) {
   .container {
     width: 750px;
@@ -124,25 +143,6 @@ body {
   .navbar-btn__text {
     margin-right: 14px;
     font-size: 12px;
-  }
-}
-
-.main {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-@media (max-width: 1300px) {
-  .main {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .main {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
 
@@ -278,6 +278,166 @@ body {
   }
   .info__title {
     font-size: 35px;
+  }
+}
+
+.features {
+  margin-top: 130px;
+}
+
+.features__title {
+  font-size: 40px;
+  line-height: 130%;
+  color: #212353;
+  text-align: center;
+  font-family: 'HelveticaBold';
+  font-weight: 900;
+}
+
+.features__text {
+  display: block;
+  max-width: 585px;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 80px;
+  font-family: 'Avenir Next Cyr Regular';
+  font-weight: 300;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards-item {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin-bottom: 50px;
+  height: 358px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-blue {
+  background: url(../img/card-bg1.png) no-repeat right;
+}
+
+.card-purple {
+  background: url(../img/card-bg2.png) no-repeat right;
+}
+
+.card-text {
+  margin: 50px;
+  margin-top: 0;
+}
+
+.card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__title {
+  font-size: 24px;
+  line-height: 130%;
+  color: #212353;
+}
+
+.card__text {
+  display: block;
+  max-width: 220px;
+  font-size: 16px;
+  line-height: 160%;
+  font-family: 'Avenir Next Cyr Regular';
+  font-weight: 300;
+}
+
+.card-btn {
+  font-size: 16px;
+  line-height: 160%;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+  margin-bottom: 33px;
+}
+
+@media (max-width: 1300px) {
+  .features {
+    margin-top: 100px;
+  }
+  .features__text {
+    max-width: 600px;
+    font-size: 22px;
+  }
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cards-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features__title {
+    font-size: 35px;
+  }
+  .features__text {
+    max-width: 400px;
+    font-size: 18px;
+  }
+  .cards-item {
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 800px;
+    height: 100%;
+  }
+  .card-blue {
+    background: none;
+    background-color: rgba(104, 201, 186, 0.1);
+    border-radius: 50px;
+  }
+  .card-purple {
+    background: none;
+    background-color: rgba(156, 105, 226, 0.1);
+    border-radius: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

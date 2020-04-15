@@ -1,0 +1,98 @@
+.features
+    margin-top: 130px
+    &__title
+        font-size: 40px
+        line-height: 130%
+        color: $title-color
+        text-align: center
+        +title
+    &__text
+        display: block
+        max-width: 585px
+        font-size: 18px
+        line-height: 160%
+        text-align: center
+        margin: auto
+        margin-bottom: 80px
+        +reg
+
+.cards 
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    &-item  
+        flex-basis: 45%
+        margin-bottom: 50px
+        height: 358px
+        display: flex
+        align-items: center
+        justify-content: space-between
+.card 
+    &-blue
+        background: url(../img/card-bg1.png) no-repeat right
+    &-purple
+        background: url(../img/card-bg2.png) no-repeat right
+    &-text
+        margin: 50px
+        margin-top: 0
+    &-info
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__title
+        font-size: 24px
+        line-height: 130%
+        color: $title-color
+    &__text
+        display: block
+        max-width: 220px
+        font-size: 16px
+        line-height: 160%
+        +reg
+    &-btn
+        font-size: 16px
+        line-height: 160%
+        border: none
+        padding: 0
+        background-color: transparent
+        display: flex
+        align-items: center
+        margin-left: 50px
+        margin-bottom: 33px
+        
+@media (max-width: 1300px)
+    .features
+        margin-top: 100px
+        &__text
+            max-width: 600px
+            font-size: 22px
+    .cards 
+        justify-content: center
+        &-item  
+            flex-basis: 100%
+        
+        
+
+@media (max-width: 768px)
+    .features
+        &__title
+            font-size: 35px
+        &__text
+            max-width: 400px
+            font-size: 18px
+    .cards 
+        &-item  
+            padding: 20px
+            flex-direction: column
+            max-height: 800px
+            height: 100%
+    .card
+        &-blue
+            background: none
+            background-color: $blue-op
+            border-radius: 50px
+        &-purple
+            background: none
+            background-color: $purple-op
+            border-radius: 20px
