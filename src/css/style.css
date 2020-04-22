@@ -425,7 +425,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-height: 800px;
+    max-height: 1300px;
     height: 100%;
   }
   .card-blue {
@@ -436,14 +436,14 @@ body {
   .card-purple {
     background: none;
     background-color: rgba(156, 105, 226, 0.1);
-    border-radius: 20px;
+    border-radius: 50px;
   }
   .card-info {
-    max-height: 1000px;
+    max-height: 3000px;
     height: 100%;
   }
   .card__text {
-    min-width: 400px;
+    max-width: 400px;
     font-size: 20px;
   }
   .card-btn .navbar-btn__text {
@@ -825,6 +825,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding-bottom: 30px;
+  }
+  .footer-bottom {
+    margin-top: 50px;
+  }
   .top__title {
     font-size: 30px;
   }
@@ -884,6 +890,7 @@ body {
   }
   .bottom-chat {
     margin: auto;
+    margin-left: 0;
     margin-bottom: 10px;
   }
 }
